@@ -4,13 +4,20 @@
 	box-sizing: border-box;
 }
 
-body{
+.body{
+	background-image: url(../img/5a3a4658aecd3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow-y: scroll;
 	display: flex;
-	align-items: center;
 	justify-content: center;
 }
 
-.content{
-	background-color: cornsilk;
-	box-shadow:10px 10px aliceblue;
+.content_copy{
+	width: 1080px;
+	height: 1000px;
+	background-color: azure;
+	border-radius: 10px;
+	border: dashed 5px lightpink;
+	box-shadow: 0 0 20px gray;
 }

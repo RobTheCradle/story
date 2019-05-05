@@ -1,13 +1,13 @@
 $(function(){
 	
-	resizeWindowViewer($("body"));
+	resizeWindowViewer($(".body"));
 	
 })
 
 //监听浏览器窗口变化
 $(window).resize(function () { 
 	
-	resizeWindowViewer($("body"))	
+	resizeWindowViewer($(".body"))	
 })
 
 //重置窗口高宽
