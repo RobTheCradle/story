@@ -2,22 +2,86 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: "楷体" !important;
 }
 
+body{
+	overflow: hidden;
+}
+
+/* 主体背景 */
 .body{
 	background-image: url(../img/5a3a4658aecd3.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	overflow-y: scroll;
-	display: flex;
+	/**display: flex;
 	justify-content: center;
+	*/
 }
 
-.content_copy{
+/*.content_copy{
 	width: 1080px;
 	height: 1000px;
 	background-color: azure;
 	border-radius: 10px;
 	border: dashed 5px lightpink;
 	box-shadow: 0 0 20px gray;
+}*/
+/** 动态文字  **/
+.dynamicWords{
+	position: absolute;
+	font-weight: bolder;
+	font-size: 1.8em;
+	color: hotpink;
+	width: 35%;
+	left:25%;
+	top:40%;
+	/*border: solid 2px red;*/
+	/*transform: rotate(3deg);
+	-webkit-transform: rotate(3deg);*/
+}
+/*倒计时区域*/
+.clockEara{
+	/*border:solid whitesmoke 2px;*/
+	/*border-radius: 10px;
+	box-shadow:0px 0px 5px #F5F5F5;*/
+	width: 80%;
+	height: 10%;
+	position: absolute;
+	left: 10%;
+	top:2%;
+	/*background-color: rgba(230,97,163,0.1);*/
+}
+
+/* 时间转盘 */
+#timeCircle{
+	position: absolute;
+	right: 0%;
+	bottom: -280px;	
+	border-radius: 50%;
+}
+
+/*照片*/
+.ourPhoto{
+	background: url(../img/heart.png);
+	background-repeat: no-repeat;
+	width: 25%;
+	height: 60%;
+	position: absolute;
+	background-size: contain;
+	right: 5%;
+	top:20%;
+}
+
+/*主题文字*/
+.themeWords{
+	background: url(../img/storyWords.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 40%;
+	height: 15%;
+	position: absolute;
+	left:20%;
+	top:13%;
 }
