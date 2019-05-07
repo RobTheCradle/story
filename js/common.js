@@ -96,3 +96,30 @@ $('.clockEara').jqtimeline({
 				}
 
 			});
+
+
+//枫叶飘落
+
+    var d = "<div class='maple' style='color: #ff000;'>🍁<div>";
+    setInterval(function () {
+        var f = $(document).width();
+        var e = Math.random() * f - 300; // 枫叶的定位left值
+        var o = 0.2 + Math.random(); // 枫叶的透明度
+        var fon = 25 + Math.random() * 10; // 枫叶大小
+        var l = e - 100 + 200 * Math.random(); // 枫叶的横向位移
+        var k = 8000 + 5000 * Math.random();
+        var deg = Math.random() * 360; // 枫叶的方向
+        $(d).clone().appendTo(".maplebg").css({
+        	color:"#ff0000",
+            left: e + "px",
+            opacity: o,
+            transform: "rotate(" + deg + "deg)",
+            "font-size": fon,
+        }).animate({
+            top: "550px",
+            left: l + "px",
+            opacity: 0.1,
+        }, k, "linear", function () {
+            $(this).remove()
+        })
+    }, 1000)
