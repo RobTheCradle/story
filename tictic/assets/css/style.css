@@ -16,6 +16,7 @@ body {
     background-color: #F2F3F7;
     overflow: scroll;
     overflow-x: hidden;
+    cursor: url(../../../cur/01normal_03.cur),auto !important;
 }
 
 a{

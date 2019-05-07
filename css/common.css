@@ -3,7 +3,9 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "楷体" !important;
+	cursor: url(../cur/01normal_03.cur),auto;
 }
+
 
 body{
 	overflow: hidden;
