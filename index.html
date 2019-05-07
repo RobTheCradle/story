@@ -53,6 +53,8 @@
 
 		playSound();
 		function playSound(){
+			if(!confirm("是否播放背景音乐？"))
+			return false;
       var borswer = window.navigator.userAgent.toLowerCase();
       if ( borswer.indexOf( "ie" ) >= 0)
       {
@@ -76,7 +78,7 @@
         //浏览器支持 audion
 //      audio.play();
 
-		if(confirm("是否播放背景音乐？"))
+		
 		setInterval("toggleSound()",1);
       }
     }
