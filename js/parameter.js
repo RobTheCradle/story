@@ -38,9 +38,20 @@ let typewriter = (function(){
 					}
 				});
 			}
-			this.$el.append('<span style="display:inline-block;" class="tip '+ effect+'">' + words[count] + '</span>');
+				if(typeof(words[count])=='undefined'){
+				return false;
+			}
+			if("|"==words[count]){
+								this.$el.append('<br/>');
+			}else{
+				
+				this.$el.append('<span style="display:inline-block;" class="tip '+ effect+'">' + words[count] + '</span>');
+			}
+			
 			(typeof this.$options.excute === 'function') && this.$options.excute.call(this.$el[0],timer);
+			
 			this.$el.trigger('excute',[timer]);
+		
 			if (++count >= words.length) {
 				clearInterval(timer);
 				timer=null;

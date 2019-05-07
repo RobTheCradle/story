@@ -27,12 +27,14 @@ function resizeWindowViewer($ele){
 
 //动态文字效果
 $(".d_1").typewriter({
-	text:'人生的路很长很长，让我陪你一起走吧。',
+	text:'人生的路很长很长|让我陪你一起走吧|我愿与你搭建一个属于我们自己的天空。',
 	effect:'right',
 	complete: function() {
-		$(".d_2").typewriter({
-	text:'我愿与你搭建一个属于我们自己的天空。',
-	effect:'right'
+		$(".w_1").typewriter({
+	text:'白天有光|夜晚有星|水里有鱼|天空有飞鸟|在这繁华且多彩的世界|幸好有你！',
+	effect:'down',
+	complete: function(){
+	}
 	});
 	}
 });
