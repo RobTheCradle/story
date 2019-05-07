@@ -42,10 +42,17 @@
 	<!--<script type="text/javascript" src="js/timeCircle.js" ></script>-->
 	<script type="text/javascript" src="js/common.js" ></script>
 	<script language="javascript">
+		       function toggleSound() {
+            var music = document.getElementById("audioPlay");//获取ID  
+            if (music.paused) { //判读是否播放  
+                music.paused=false;
+                music.play(); //没有就播放 
+            }  
+            
+        }
+
 		playSound();
 		function playSound(){
-        if(!confirm("是否播放背景音乐？"))
-        return false;
       var borswer = window.navigator.userAgent.toLowerCase();
       if ( borswer.indexOf( "ie" ) >= 0)
       {
@@ -68,17 +75,12 @@
 
         //浏览器支持 audion
 //      audio.play();
+
+		if(confirm("是否播放背景音乐？"))
+		setInterval("toggleSound()",1);
       }
     }
-              function toggleSound() {
-            var music = document.getElementById("audioPlay");//获取ID  
-            if (music.paused) { //判读是否播放  
-                music.paused=false;
-                music.play(); //没有就播放 
-            }  
-            
-        }
+       
 
-setInterval("toggleSound()",1);
 </script>
 </html>
