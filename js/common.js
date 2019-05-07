@@ -19,17 +19,26 @@ function resizeWindowViewer($ele){
 	let windowWidth = $(window).width();
 	let windowHeight = $(window).height();
 	
-	console.log("windowWidth="+windowWidth+"px;windowHeight="+windowHeight+"px;");
+//	console.log("windowWidth="+windowWidth+"px;windowHeight="+windowHeight+"px;");
 	
 	$ele.width(windowWidth);
 	$ele.height(windowHeight);
 }
 
 //动态文字效果
-$(".dynamicWords").typewriter({
-	text:'人生的路很长很长，让我陪你一起走吧。我愿与你搭建一个属于我们自己的天空。',
+$(".d_1").typewriter({
+	text:'人生的路很长很长，让我陪你一起走吧。',
+	effect:'right',
+	complete: function() {
+		$(".d_2").typewriter({
+	text:'我愿与你搭建一个属于我们自己的天空。',
 	effect:'right'
+	});
+	}
 });
+
+
+
 
 //鼠标悬停闪耀星星效果
 $(".dynamicWords").sparkle({

@@ -409,4 +409,14 @@ a{
 	margin: 100px 0 0 -15px;
 	display: block;
 }
+#mouseFollow{
+  margin: 0;
+  padding: 0;
+  display: block; 
+  touch-action: none; 
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 /* end grid */

@@ -1,8 +1,9 @@
 *{
 	margin: 0;
 	padding: 0;
+	border: 0;
 	box-sizing: border-box;
-	font-family: "楷体" !important;
+	font-family: "楷体",sans-serif !important;
 	cursor: url(../cur/01normal_03.cur),auto;
 }
 
@@ -95,4 +96,16 @@ body{
 	position: absolute;
 	top: 0;
 	color: #ff000;
+}
+ 
+/*文字区域*/
+.wordEara{
+	position: absolute;
+	font-weight: bolder;
+	font-size: 1.5em;
+	color: hotpink;
+	width: 20%;
+	height: 30%;
+	right:7%;
+	top:50%;
 }
