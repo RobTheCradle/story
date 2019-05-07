@@ -30,12 +30,12 @@ $(".dynamicWords").typewriter({
 
 //鼠标悬停闪耀星星效果
 $(".dynamicWords").sparkle({
-	color:"pink",
+	color:"red",
 	count:50,
 	overlap:0,
 	speed:2,
-	minSize:4,
-	maxSize:7,
+	minSize:7,
+	maxSize:14,
 	direction:"both"
 });
 
