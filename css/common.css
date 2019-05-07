@@ -58,8 +58,9 @@ body{
 #timeCircle{
 	position: absolute;
 	right: 0%;
-	bottom: -280px;	
+	top: 0px;	
 	border-radius: 50%;
+	pointer-events: none;
 }
 
 /*照片*/

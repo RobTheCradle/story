@@ -1,5 +1,5 @@
-const WIDTH = 600
-const HEIGHT = 600
+const WIDTH =  $(window).height();
+const HEIGHT = $(window).height();
 const R = WIDTH >= HEIGHT ? WIDTH / 2 : HEIGHT / 2
 const WEEKS = ['星期天', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六']
 const COUNTDAYS = getCountDays()
@@ -56,7 +56,7 @@ function run() {
 
 function draw() {
     // 背景色
-    cxt.fillStyle = 'rgba(230,97,163,.1)';
+    cxt.fillStyle = 'rgba(230,97,163,0)';
     cxt.fillRect(0, 0, WIDTH, HEIGHT)
     cxt.restore();
     cxt.save();

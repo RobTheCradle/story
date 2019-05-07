@@ -50,7 +50,6 @@ $(".ourPhoto").sparkle({
 });
 
 
-
 //时间轴
 var ev = [{
 
